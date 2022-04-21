@@ -44,7 +44,9 @@ class Aguila extends Animal {
 
 //--------------------------------------//
 function getAllAnimals() {
-  return fetch("/animales.json").then((response) => response.json());
+  return fetch(
+    "https://yersonreyes.github.io/Javascript-prueba/animales.json"
+  ).then((response) => response.json());
 }
 
 async function iniciarPrograma() {
